@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-image: url('../img/fond.png');
+    padding:0;
+    margin:0;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
+header{
+    margin-top:60px;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    width:100%;
+    background-color:#25B3B4;
+    border-top:4px solid #1f9696;
+    border-bottom: 4px solid #1f9696;
+    
+}
+.welcome{
+    font-size: 2.5em;
+}
+ul {
+    padding-left:0;
+}
+li {
+    display: inline-block;
+    padding:20px;
+}
+a {
+    text-decoration:none;
+    color:white;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    margin-top:40px;
+}
+.description1,.description2,.description3{
+    font-size:1.2em;
+    text-align:center;
+}
+.para1{
+    margin:auto;
+    width:600px;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+
+
+/* container */
+.container {
+    margin:auto;
+    width:1000px;
+    font-family:'Open Sans' , sans-serif;
+    padding-top: 100px;
+    overflow:hidden;
+    
+}
+h1{
+    text-align:center;
+    font-size:3.5em;
+}
+.leT,.fa-droplet-color {
+    color:rgb(1, 141, 141);
+    
+}
+
+.dishes {
+    float:left;
+}
+.alldishes{
+    overflow:hidden;
+    width:600px;
+    background-color:#e0fffc;
+}
+
+.dish1,.dish2{
+    float:left;
+    width:40%;
+    padding-left: 40px;
+    margin-bottom: 60px;
+    /* padding:0px 5px; */
+}
+
+.dish1-button{
+    
+    
+    height:40px;
+    width:100px;
+    margin-left:140px;
+    color:white;
+    background-color: #1f9696;
+    border:0;
+}
+
+.dishh1{
+overflow:hidden;
+width:100%;
+text-align: center;
+}
+.recipe1 {
+    border-radius:50%;
+     float:left; 
+     height:100px;
+     width:45%;
+     margin-right:5%;
+    
+}
+.recipe1-para1{
+    text-align:start;
+}
+
+.recipe1-para2,.recipe1-para3{
+    /* margin:10px; */
+    margin:0;
+    width:100%
+}
+
+.description{
+    /* position: absolute; */
+    float:left;
+}
+/*dish-description*/
+.dish-description{
+    /* left:600px; */
+    position:relative;
+    width:300px;
+    padding:20px;
+    border:4px solid #0b3838;
+    margin-left:20px;
+    color:white;
+    background-color:#0d969b;
+}
+
+/* Style the contact section */
+
+  #contact a:hover {
+    color: darkblue;
+  }
+
+
+
+
+ /*footer */
+footer{
+    font-family:'Open Sans' , sans-serif ;
+}
+.mig {
+    margin:10px 0px;
+    text-align: center;
+}
+
+.imga{
+    width:50px
+}
+
+.lasttext1 ,.lasttext2{
+    text-align:center;
+    font-size: 0.8em;
+}
+
+u {
+    color:#a366ff;
+}
+
+button{
+    width: 100px;
+    height: 20px;
+}
+button::before {
+    content: "Add to cart";
+    color: #141010; 
+    font-size: 16px; 
+    font-style: italic; 
+
+cart-button{
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    transition: 3s ease-in-out;
+    overflow: hidden;
+
+}
+.cart-button:hover{
+    background-color: #fff;
+}
+.cart-button:active{
+    transform: scale(.9);
+}
+.cart-button .fa-shopping-cart{
+    position:absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    font-size: 2em;
+    transform: translate(-50%,-50%);
+}
+.cart-button .fa-box{
+    position:absolute;
+    z-index: 3;
+    top: -20%;
+    left: 52%;
+    font-size: 1.2em;
+    transform: translate(-50%,-50%);
+}
+.cart-button span{
+    position:absolute;
+    z-index: 3;
+    top: 50%;
+    color: #000;
+    left: 50%;
+    font-size: 1.2em;
+    transform: translate(-50%,-50%);
+}
+
+.cart-button span.add-to-cart{
+    opacity: 1;
+}
+
+.cart-button span.added{
+    opacity: 0;
+}
+
+.cart-button.clicked .fa-shopping-cart{
+    animation: cart 1.5s ease-in-out forwards;
+}
+.cart-button.clicked .fa-box{
+    animation: cart 1.5s ease-in-out forwards;
+}
+.cart-button.clicked .span.added{
+    animation: cart 1.5s ease-in-out forwards;
+}
+@keyframes cart{
+    0%{
+        left: -10%;
+    }
+    40%,60%{
+        left: 50%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+@keyframes box{
+    0%, 40%{
+        left: -20%;
+    }
+    60%{
+        top: 40%;
+        left: 52%;
+    }
+    100%{
+        top: 40%;
+        left: 112%;
+    }
+}
+
+@keyframes txt1{
+0%{
+    opacity: 1;
+}
+20%,100%{
+    opacity: 0;
+}
+}
+@keyframes txt2{
+    0%,80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    }
+    
